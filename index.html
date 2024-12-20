@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Форум</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Тема 1</a></li>
+                    <li><a href="#">Тема 2</a></li>
+                    <li><a href="#">Тема 3</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="forum-posts">
+                <h2>Последние сообщения</h2>
+                
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="avatar" class="post-avatar">
+                        <span class="author">Нурсултан Баймурзин</span>
+                        <span class="time">2 часа назад</span>
+                    </div>
+                    <p class="post-text">"Никогда не сдавайтесь и всегда верьте в себя. Мысли — это наш основной источник силы. #мотивация #позитив"</p>
+                    <div class="post-reply">
+                        <button class="reply-button" onclick="replyToPost()">Ответить</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="avatar" class="post-avatar">
+                        <span class="author">Айша Ахметова</span>
+                        <span class="time">4 часа назад</span>
+                    </div>
+                    <p class="post-text">"Любовь — это не просто слово, это действие. И важно помнить о каждом мгновении с близкими. #любовь #счастье"</p>
+                    <div class="post-reply">
+                        <button class="reply-button" onclick="replyToPost()">Ответить</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="avatar" class="post-avatar">
+                        <span class="author">Ержан Сулейменов</span>
+                        <span class="time">1 день назад</span>
+                    </div>
+                    <p class="post-text">"Каждый день — новая возможность. Используй ее по максимуму! #день #новаяжизнь #мотивация"</p>
+                    <div class="post-reply">
+                        <button class="reply-button" onclick="replyToPost()">Ответить</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="avatar" class="post-avatar">
+                        <span class="author">Гульнар Жанузакова</span>
+                        <span class="time">2 дня назад</span>
+                    </div>
+                    <p class="post-text">"Иногда стоит просто остановиться и подумать о жизни, о том, что у тебя есть. Моменты счастья часто скрыты в простоте."</p>
+                    <div class="post-reply">
+                        <button class="reply-button" onclick="replyToPost()">Ответить</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="avatar" class="post-avatar">
+                        <span class="author">Сейдолла Тургунбаев</span>
+                        <span class="time">3 дня назад</span>
+                    </div>
+                    <p class="post-text">"Каждый из нас может быть героем своей собственной истории, важно только верить в себя и не сдаваться."</p>
+                    <div class="post-reply">
+                        <button class="reply-button" onclick="replyToPost()">Ответить</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="avatar" class="post-avatar">
+                        <span class="author">Тимур Шарипов</span>
+                        <span class="time">4 дня назад</span>
+                    </div>
+                    <p class="post-text">"Неважно, сколько раз ты падаешь, важно, сколько раз ты поднимешься. Всегда стремись к своей цели!"</p>
+                    <div class="post-reply">
+                        <button class="reply-button" onclick="replyToPost()">Ответить</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new-post">
+                <h3>Написать сообщение</h3>
+                <textarea placeholder="Введите ваше сообщение..." class="message-input"></textarea>
+                <button class="send-button">Отправить</button>
+            </section>
+
+            <section class="popular-topics">
+                <h3>Популярные темы</h3>
+                <ul>
+                    <li><a href="#">Путеводители по миру</a></li>
+                    <li><a href="#">Мифы о личностном росте</a></li>
+                    <li><a href="#">Как найти своё предназначение</a></li>
+                    <li><a href="#">Забота о психическом здоровье</a></li>
+                    <li><a href="#">Технологии и будущее</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Форум. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        function replyToPost() {
+            alert('Ответить на сообщение');
+        }
+    </script>
+</body>
+</html>
